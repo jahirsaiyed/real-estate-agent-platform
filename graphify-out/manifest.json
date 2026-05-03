@@ -1,0 +1,466 @@
+{
+  "D:\\Projects\\Real_Estate_Agent\\backend\\alembic\\env.py": {
+    "mtime": 1777820653.200875,
+    "hash": "e4b4f10de88d87a7ee4e1ca690fe779f"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\alembic\\versions\\001_initial_schema.py": {
+    "mtime": 1777820769.4327898,
+    "hash": "42eb56a8717c7308ba7bf24ae0d35de2"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\main.py": {
+    "mtime": 1777838436.8336923,
+    "hash": "ffc9949f6812a90112f71250449df2b8"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\__init__.py": {
+    "mtime": 1777820406.2385328,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\graph.py": {
+    "mtime": 1777822552.630049,
+    "hash": "7ee3e90c195c71dca8f97f12ae5aaa4b"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\llm.py": {
+    "mtime": 1777820624.7565992,
+    "hash": "212e456dfec24fb20813894f2f960334"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\memory.py": {
+    "mtime": 1777822435.6658907,
+    "hash": "7bcaee76d68a37077afa70b4c242ac95"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\state.py": {
+    "mtime": 1777820617.3005795,
+    "hash": "f3e9e4a5d4e3e6625ba40debd1891dc4"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\__init__.py": {
+    "mtime": 1777820413.2601488,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\nodes\\booking.py": {
+    "mtime": 1777822459.3380485,
+    "hash": "b7e03b55309cd920541eb0026d2aab9b"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\nodes\\handoff.py": {
+    "mtime": 1777822483.2153678,
+    "hash": "1bd4cb92366da60383312fa4b9fd1352"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\nodes\\property_search.py": {
+    "mtime": 1777822447.8813639,
+    "hash": "78223614b0f8420cb171fb2879c123ff"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\nodes\\qualification.py": {
+    "mtime": 1777822476.052371,
+    "hash": "533350997abe082e930d15be2ada45ed"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\nodes\\rag.py": {
+    "mtime": 1777822465.2597508,
+    "hash": "6396a93c142937f1ca40520fb8d64513"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\agents\\nodes\\__init__.py": {
+    "mtime": 1777822438.5156448,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\api\\__init__.py": {
+    "mtime": 1777820407.20409,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\api\\v1\\auth.py": {
+    "mtime": 1777820600.6253471,
+    "hash": "3c4ca6c786113d008cfa38acca0db116"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\api\\v1\\deps.py": {
+    "mtime": 1777820589.118018,
+    "hash": "21c0f2c81f8f764d83691ed2b79d0f19"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\api\\v1\\health.py": {
+    "mtime": 1777820582.7015607,
+    "hash": "5f3693e2bda5c6cf6711e535a9d2ff6c"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\api\\v1\\properties.py": {
+    "mtime": 1777822571.4233525,
+    "hash": "2c09afa5df712150a9bedfb5f7aacbc2"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\api\\v1\\router.py": {
+    "mtime": 1777822697.4663005,
+    "hash": "1897a9fa95a97bf87268dc17a7181fb9"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\api\\v1\\__init__.py": {
+    "mtime": 1777820408.0654795,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\core\\config.py": {
+    "mtime": 1777822217.2913945,
+    "hash": "641513451bfbc86d37e9d8f42ec3a56d"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\core\\database.py": {
+    "mtime": 1777820430.8981204,
+    "hash": "aac74a79aa346e2a45eff3e2609841a1"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\core\\security.py": {
+    "mtime": 1777820428.7905319,
+    "hash": "7a7f15295c355fc9cd2153ba3428bec3"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\core\\__init__.py": {
+    "mtime": 1777820406.732505,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\analytics_event.py": {
+    "mtime": 1777820552.3956313,
+    "hash": "a1094ea1819ec6381302075eaed2a62b"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\appointment.py": {
+    "mtime": 1777820505.555561,
+    "hash": "968f5d8fd022f77f9910f6bd9feb4743"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\audit_log.py": {
+    "mtime": 1777820569.1132276,
+    "hash": "29390c7799dbffc8c2e4d872eb85a8cc"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\base.py": {
+    "mtime": 1777820434.8919203,
+    "hash": "3de7c05e9e5834fe52e3111e77f9da20"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\conversation.py": {
+    "mtime": 1777820465.628162,
+    "hash": "0b73f2a986e7fca102ee52d5f8a96907"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\document.py": {
+    "mtime": 1777820512.0612366,
+    "hash": "365e8002e1cd6b4c295490e34c155b9e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\eoi_submission.py": {
+    "mtime": 1777820540.3366225,
+    "hash": "280b75c1d929dc79016465159f5fce7e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\etl_job.py": {
+    "mtime": 1777820546.9936206,
+    "hash": "e345d82cbf545b9e9bcae3d9cce71dfa"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\fx_rate.py": {
+    "mtime": 1777820559.8186045,
+    "hash": "c47194b8a7b4afc688a069b3b0fca26a"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\guardrail_rule.py": {
+    "mtime": 1777820564.3513358,
+    "hash": "5c59ed76ed9f6df4f7f94e2ba1b9da11"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\lead.py": {
+    "mtime": 1777820458.4911706,
+    "hash": "1fa34d3b7e7955eef7bc7ee07845476d"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\location.py": {
+    "mtime": 1777820479.538196,
+    "hash": "37e686eaf39b0ad7b581a05e3c9eb08c"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\message.py": {
+    "mtime": 1777820471.4225454,
+    "hash": "d6940f873d9110938bb54084f63984ee"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\notification.py": {
+    "mtime": 1777820524.0383549,
+    "hash": "9030f9296c99f51c2192ad5e440ca69d"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\notification_template.py": {
+    "mtime": 1777820517.6192684,
+    "hash": "e452dee662c03d203b7855bfbf19e938"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\off_plan_project.py": {
+    "mtime": 1777820534.9776187,
+    "hash": "6cc261a2e3e3d748f8d56a98e6542d03"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\property.py": {
+    "mtime": 1777822363.8303542,
+    "hash": "45c324e19bddd4cd1df2259d5ea435c0"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\saved_search.py": {
+    "mtime": 1777820556.3351574,
+    "hash": "294717b65b74bc295ceb5ca38e8f4e41"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\tenant.py": {
+    "mtime": 1777820438.722868,
+    "hash": "6340bcacb899129862f5ce911f197aa0"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\user.py": {
+    "mtime": 1777820443.9370522,
+    "hash": "0b163d1b65db8c7828ea386f9a728a8b"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\models\\__init__.py": {
+    "mtime": 1777820412.3103118,
+    "hash": "fbfaa68ec2aaf5c0f9a50df4ccb1e99f"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\repositories\\appointment.py": {
+    "mtime": 1777822403.244017,
+    "hash": "62a4999f76fc68f20fe3ff26b11d5a35"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\repositories\\conversation.py": {
+    "mtime": 1777822390.0337236,
+    "hash": "59f545908615550f7a393d3bf95b3c03"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\repositories\\lead.py": {
+    "mtime": 1777822423.3417635,
+    "hash": "65ac73ad9b5149cee7fa16675ce506d7"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\repositories\\property.py": {
+    "mtime": 1777822374.085334,
+    "hash": "f774ed000095b7fb7f3b23cbd19a232f"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\repositories\\__init__.py": {
+    "mtime": 1777822325.4242253,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\appointment.py": {
+    "mtime": 1777822248.3637776,
+    "hash": "e4adaa5d6cfa32b0f99feb19acc7daa8"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\auth.py": {
+    "mtime": 1777820574.3442483,
+    "hash": "adb20cae9728d5b4816f9748ea04132a"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\calculator.py": {
+    "mtime": 1777822270.447555,
+    "hash": "5d8c84528512239787341f6617d8db91"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\conversation.py": {
+    "mtime": 1777822241.2423298,
+    "hash": "daccf79991669d166602d1751715c6af"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\health.py": {
+    "mtime": 1777820575.8520582,
+    "hash": "bd76a3cb1118dd364201e0b3ed5afebf"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\lead.py": {
+    "mtime": 1777822258.3032315,
+    "hash": "ecb8a0018eda1e2b17e9762af559a924"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\property.py": {
+    "mtime": 1777822233.2107441,
+    "hash": "cf49a1a662be863715eb884e61d6f388"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\schemas\\__init__.py": {
+    "mtime": 1777820412.9653766,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\services\\crm.py": {
+    "mtime": 1777822322.3940785,
+    "hash": "9908f0b10cebc8b0abc78b0d7ff606e8"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\services\\embedding.py": {
+    "mtime": 1777822290.7282841,
+    "hash": "a06d9d33815ce26cacfa86744d661758"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\services\\notification.py": {
+    "mtime": 1777838489.9785452,
+    "hash": "1db9e6c8093c36ba00eb408522e319dc"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\app\\services\\__init__.py": {
+    "mtime": 1777822273.6959264,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\tests\\test_health.py": {
+    "mtime": 1777820775.8336885,
+    "hash": "197d571dfde6d284199645cae8d9d0ac"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\tests\\__init__.py": {
+    "mtime": 1777820772.634688,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\app-canvas.jsx": {
+    "mtime": 1777820765.3505523,
+    "hash": "dbe55e647c12e4b5265c568b2341135c"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\app.jsx": {
+    "mtime": 1777820765.4577303,
+    "hash": "ffea0d135643ba8329b896ee70058700"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\data.jsx": {
+    "mtime": 1777820765.467308,
+    "hash": "c9e496a0d39919f63023bdb76e2e1aa6"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\design-canvas.jsx": {
+    "mtime": 1777820765.4772048,
+    "hash": "47b2b9e7a70f611de66361bf24d26dba"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\ios-frame.jsx": {
+    "mtime": 1777820765.4882002,
+    "hash": "cfb8be183152a0cb0a575e6598192153"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\mobile-app.jsx": {
+    "mtime": 1777820765.4993567,
+    "hash": "3d7409e663bb96b06cfe63bec884c6c3"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\screens-1.jsx": {
+    "mtime": 1777820765.5093093,
+    "hash": "37968d3e7cecaadf049d16db4a3bbfef"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\screens-2.jsx": {
+    "mtime": 1777820765.5177135,
+    "hash": "069e8707b6281c8961e13d57976372b1"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\tweaks-panel.jsx": {
+    "mtime": 1777820765.5476542,
+    "hash": "b7b8c3460f192d10b7c0c3144f299120"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\next.config.ts": {
+    "mtime": 1777820799.9033604,
+    "hash": "e332c142aba7a8875a8c9ac9e4e63d9d"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\postcss.config.js": {
+    "mtime": 1777820805.2628057,
+    "hash": "8640f9b2e6475cc3f5b1ff4548925765"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\tailwind.config.ts": {
+    "mtime": 1777820805.0545247,
+    "hash": "faf51fab30a938b27d70bddd206b4d4e"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\app\\layout.tsx": {
+    "mtime": 1777820824.6711893,
+    "hash": "69ec3351f3890500a1abb6f6ce972e02"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\app\\page.tsx": {
+    "mtime": 1777820825.889951,
+    "hash": "73a39a45c5754b4489ddc943a8757d35"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\app\\(admin)\\layout.tsx": {
+    "mtime": 1777820852.1727662,
+    "hash": "94e40b2872e6df7259a4e21160bf2922"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\app\\(admin)\\dashboard\\page.tsx": {
+    "mtime": 1777838319.8620045,
+    "hash": "9fdbd313bc6809d98b4c460f47a94a3a"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\app\\(auth)\\login\\page.tsx": {
+    "mtime": 1777820838.081203,
+    "hash": "ad1280525c92a96b077523e99cb55f46"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\components\\admin\\header.tsx": {
+    "mtime": 1777820847.556284,
+    "hash": "c14b15633b038c1b8f74a6c47a3b4b50"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\components\\admin\\sidebar.tsx": {
+    "mtime": 1777838395.6444175,
+    "hash": "1a27017f0a2634af918603d1b8ecee94"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\lib\\api.ts": {
+    "mtime": 1777820811.8658662,
+    "hash": "0fa090463b4271187df2a5c5833c40d9"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\lib\\auth.ts": {
+    "mtime": 1777820813.1344118,
+    "hash": "698a7ce738e2c88d8c7e79acfd184151"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\frontend\\src\\lib\\utils.ts": {
+    "mtime": 1777820848.424912,
+    "hash": "618d00bf4537ce84f9ba62c5b215fb30"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\scripts\\add_jira_descriptions.py": {
+    "mtime": 1777801910.2330296,
+    "hash": "0da2ce482588c237ce2f3c730997b9fa"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\scripts\\create_confluence_pages.py": {
+    "mtime": 1777811023.3134298,
+    "hash": "39b736262f7654cb0fd087c28b8b3456"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\scripts\\create_jira_subtasks.py": {
+    "mtime": 1777801910.2330296,
+    "hash": "fa6c6eec9a39b493036376aea8415ad6"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\scripts\\create_jira_tickets.py": {
+    "mtime": 1777801910.2295594,
+    "hash": "0116ba26bd966182c878fa3fbbcb1722"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\scripts\\create_rea_jira.py": {
+    "mtime": 1777811036.430057,
+    "hash": "bde0ba3680ea6899d7e6491a5c1848e8"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\scripts\\push_decisions_confluence.py": {
+    "mtime": 1777811029.861186,
+    "hash": "07a460767c2953d435887dbd0433397f"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\scripts\\setup_sprints.py": {
+    "mtime": 1777811678.9626925,
+    "hash": "517a8d25524df247eac4a46d2458fe20"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\AGENTS.md": {
+    "mtime": 1777822329.5747173,
+    "hash": "2ed67c68f28bc1ef95ac24167431d7e8"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\CLAUDE.md": {
+    "mtime": 1777822307.6758738,
+    "hash": "2ed67c68f28bc1ef95ac24167431d7e8"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docker-compose.yml": {
+    "mtime": 1777820385.411786,
+    "hash": "9e69939b16539c559658b58688107c0a"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\prd_real_estate_agent_platform.md": {
+    "mtime": 1777799419.1406384,
+    "hash": "7f849b6409ebcfe645dc10ffffdf183c"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\README.md": {
+    "mtime": 1777838647.4925308,
+    "hash": "222236cef518b236a2e345390f4fba56"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\backend\\render.yaml": {
+    "mtime": 1777820876.3475187,
+    "hash": "927bc5521ece82aa23e83f57d3ba7a09"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\README.md": {
+    "mtime": 1777806683.956536,
+    "hash": "be7040ef31c8465c29153c99caee9f2b"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\01-system-overview.md": {
+    "mtime": 1777806338.5242224,
+    "hash": "6f4f569b80459ecc83168cb43fcdd658"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\02-c4-containers.md": {
+    "mtime": 1777806355.6961837,
+    "hash": "2b1c43964087cc1671b0c9590e8f523b"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\03-component-diagram.md": {
+    "mtime": 1777806406.2290144,
+    "hash": "45c801b2b2dae0a51c3dd733e8d40adf"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\04-sequence-diagrams.md": {
+    "mtime": 1777806459.364508,
+    "hash": "4bbb0551b63f3e6b2ce555319e29e59b"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\05-data-flow.md": {
+    "mtime": 1777806495.3902328,
+    "hash": "f77633c9235053da590a3bb013dffa65"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\06-deployment.md": {
+    "mtime": 1777806538.866526,
+    "hash": "99c24d354cd938e40dbe270ec0a3ade7"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\07-database-schema.md": {
+    "mtime": 1777806577.0215683,
+    "hash": "4ca803c31a7770270bae1b70c6526d53"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\08-api-design.md": {
+    "mtime": 1777806617.5950656,
+    "hash": "e51501905e92cfa12ae9fc0d271d6d75"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\architecture\\09-agent-architecture.md": {
+    "mtime": 1777806669.3772461,
+    "hash": "4edd3d395b95e266e6f2295c35b051f8"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\README.md": {
+    "mtime": 1777820765.3030121,
+    "hash": "aa0cd67cf4eec1ad12d710e7d72fe6f3"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\Real Estate Agent v2.html": {
+    "mtime": 1777820765.3305545,
+    "hash": "6aa72cf0f399830b7598a8f4d2dc09ec"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\docs\\real-estate-agent\\project\\Real Estate Agent.html": {
+    "mtime": 1777820765.3415537,
+    "hash": "e2c18aa9c760833101f51ce92bbc4341"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\skills\\git-commit\\SKILL.md": {
+    "mtime": 1777821918.7156618,
+    "hash": "a2d337011acd9b12ba4da346a41b8614"
+  },
+  "D:\\Projects\\Real_Estate_Agent\\skills\\grill-me\\SKILL.md": {
+    "mtime": 1777802200.094937,
+    "hash": "0dc3fcbdb6a27228f328ea86f4505c11"
+  }
+}
