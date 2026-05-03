@@ -1,0 +1,92 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - "backend/**"
+      - ".github/workflows/backend-ci.yml"
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - "backend/**"
+      - ".github/workflows/backend-ci.yml"
+
+jobs:
+  test:
+    name: Lint, Type Check & Test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+
+    services:
+      postgres:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_USER: rea_user
+          POSTGRES_PASSWORD: rea_password
+          POSTGRES_DB: realestateagent
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgresql+psycopg://rea_user:rea_password@localhost:5432/realestateagent
+      REDIS_URL: redis://localhost:6379/0
+      RABBITMQ_URL: amqp://guest:guest@localhost:5672/
+      SECRET_KEY: ci-test-secret-key-32-chars-minimum!!
+      JWT_PRIVATE_KEY_PATH: ./secrets/jwt_private.pem
+      JWT_PUBLIC_KEY_PATH: ./secrets/jwt_public.pem
+      LLM_MODEL_ID: blissful_ishizaka_626/gemma4-cloud
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      LANGSMITH_API_KEY: ${{ secrets.LANGSMITH_API_KEY }}
+      LANGSMITH_PROJECT: real-estate-agent-ci
+      QDRANT_URL: http://localhost:6333
+      QDRANT_API_KEY: ""
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: pip install --upgrade uv
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Generate test JWT keys
+        run: |
+          mkdir -p secrets
+          openssl genrsa -out secrets/jwt_private.pem 2048
+          openssl rsa -in secrets/jwt_private.pem -pubout -out secrets/jwt_public.pem
+
+      - name: Lint with ruff
+        run: uv run ruff check app/
+
+      - name: Type check with mypy
+        run: uv run mypy app/ --ignore-missing-imports
+
+      - name: Run Alembic migrations
+        run: uv run alembic upgrade head
+
+      - name: Run tests
+        run: uv run pytest tests/ -x --cov=app --cov-report=term-missing

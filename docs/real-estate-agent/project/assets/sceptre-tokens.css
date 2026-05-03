@@ -1,0 +1,257 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Sceptre Design System — Colors & Type
+   ──────────────────────────────────────────────────────────────────────────
+   Source of truth for the Sceptre desktop app (Electron + React).
+   Apple-glass aesthetic on a dark charcoal base with a signature cyan accent.
+   All tokens are prefixed with --scp-* and aliased to --r42-* for codebase compat.
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── ATMOSPHERIC BACKGROUND (behind glass) ─────────────────────────────── */
+  --scp-bg-deep:      #020202;
+  --scp-bg-start:     #030303;
+  --scp-bg-mid:       #121214;
+  --scp-bg-end:       #0e0e10;
+  --scp-bg-gradient:
+    linear-gradient(152deg, #060610 0%, #0f1018 38%, #0a0c14 62%, #080a10 100%);
+
+  /* Colored light-source orbs — revealed through frosted glass */
+  --scp-orb-cyan:   rgba(34, 211, 238, 0.07);
+  --scp-orb-violet: rgba(139, 92, 246, 0.05);
+  --scp-orb-warm:   rgba(251, 191, 36, 0.025);
+
+  /* ── SURFACES (frosted glass fills) ────────────────────────────────────── */
+  --scp-ink:         rgba(0, 0, 0, 0.55);
+  --scp-deep:        rgba(0, 0, 0, 0.38);
+  --scp-panel:       rgba(255, 255, 255, 0.06);
+  --scp-panel-alt:   rgba(255, 255, 255, 0.04);
+  --scp-shell-fill:  rgba(14, 14, 18, 0.38);
+  --scp-titlebar:    rgba(12, 12, 16, 0.32);
+
+  /* Panel gradient for "elevated glass cards" */
+  --scp-glass-panel:
+    linear-gradient(165deg, rgba(38, 38, 44, 0.74) 0%, rgba(24, 24, 30, 0.72) 100%);
+  --scp-glass-panel-elevated:
+    linear-gradient(165deg, rgba(44, 44, 50, 0.82) 0%, rgba(28, 28, 34, 0.8) 100%);
+  --scp-glass-sidebar:
+    linear-gradient(180deg, rgba(34, 34, 40, 0.58) 0%, rgba(22, 22, 28, 0.64) 100%);
+
+  /* ── FOREGROUND ─────────────────────────────────────────────────────────── */
+  --scp-fg:          #f8fafc;   /* primary text — near-white */
+  --scp-fg-muted:    #94a3b8;   /* slate-400 — labels, metadata */
+  --scp-fg-subtle:   rgba(148, 163, 184, 0.35);
+  --scp-fg-inverse:  #0f172a;   /* slate-900 — for on-accent text */
+
+  /* ── BRAND / ACCENT ─────────────────────────────────────────────────────── */
+  /* Signature cyan — the "M42 cyan" from the logo */
+  --scp-accent:         #22d3ee;  /* tailwind cyan-400 */
+  --scp-accent-bright:  #5eead4;  /* teal-300 — primary btn gradient start */
+  --scp-accent-dim:     #0891b2;  /* cyan-600 — primary btn gradient end */
+  --scp-accent-logo:    #36bfc7;  /* exact M42 logo cyan */
+  --scp-accent-glow:    rgba(34, 211, 238, 0.35);
+  --scp-accent-wash:    rgba(34, 211, 238, 0.08);
+
+  /* ── SEMANTIC STATUS ────────────────────────────────────────────────────── */
+  --scp-success:  #4ade80;
+  --scp-warn:     #fbbf24;
+  --scp-error:    #f87171;
+  --scp-info:     #22d3ee;
+
+  /* ── BORDERS & DIVIDERS ─────────────────────────────────────────────────── */
+  --scp-border-faint:    rgba(255, 255, 255, 0.06);
+  --scp-border:          rgba(255, 255, 255, 0.14);
+  --scp-border-strong:   rgba(255, 255, 255, 0.22);
+  --scp-border-accent:   rgba(34, 211, 238, 0.45);
+  --scp-border-danger:   rgba(248, 113, 113, 0.5);
+  --scp-rule:            rgba(255, 255, 255, 0.08);
+
+  /* ── SHADOWS & INNER HIGHLIGHTS (core to the glass language) ───────────── */
+  --scp-shadow-sm:    0 2px 12px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1);
+  --scp-shadow:       0 8px 40px rgba(0, 0, 0, 0.28), 0 2px 8px rgba(0, 0, 0, 0.12);
+  --scp-shadow-lg:    0 16px 48px -6px rgba(0, 0, 0, 0.3);
+  --scp-shadow-glow:  0 0 28px var(--scp-accent-glow);
+  --scp-inner-light:  inset 0 0.5px 0 rgba(255, 255, 255, 0.18);
+  --scp-edge-hi:      inset 0 0.5px 0 rgba(255, 255, 255, 0.12);
+
+  /* ── GLASS BLUR PARAMETERS ──────────────────────────────────────────────── */
+  --scp-glass-blur:       24px;
+  --scp-glass-saturate:   1.35;
+  --scp-shell-blur:       64px;
+  --scp-shell-saturate:   1.72;
+  --scp-titlebar-blur:    44px;
+  --scp-sidebar-blur:     44px;
+
+  /* ── RADII ──────────────────────────────────────────────────────────────── */
+  --scp-radius-xs:    10px;
+  --scp-radius-sm:    12px;
+  --scp-radius:       16px;
+  --scp-radius-lg:    20px;
+  --scp-radius-pill:  999px;
+
+  /* ── SPACING SCALE (4px grid) ───────────────────────────────────────────── */
+  --scp-space-1:   4px;
+  --scp-space-2:   8px;
+  --scp-space-3:   12px;
+  --scp-space-4:   16px;
+  --scp-space-5:   20px;
+  --scp-space-6:   24px;
+  --scp-space-8:   32px;
+  --scp-space-10:  40px;
+  --scp-space-12:  48px;
+
+  /* ── MOTION ─────────────────────────────────────────────────────────────── */
+  --scp-ease:        cubic-bezier(0.4, 0, 0.2, 1);
+  --scp-ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --scp-duration:    240ms;
+  --scp-duration-fast: 120ms;
+
+  /* ── LAYOUT ─────────────────────────────────────────────────────────────── */
+  --scp-sidebar-width:            228px;
+  --scp-sidebar-width-collapsed:  76px;
+  --scp-titlebar-height:          36px;
+
+  /* ══════════════════════════════════════════════════════════════════════
+     TYPOGRAPHY
+     ══════════════════════════════════════════════════════════════════════ */
+
+  /* Font stacks
+     — Sans: SF Pro on Apple (native), system fallback elsewhere.
+     — Mono: JetBrains Mono (loaded via Google Fonts in index.html). */
+  --scp-font-sans:
+    'SF Pro Text', 'SF Pro Display',
+    -apple-system, BlinkMacSystemFont,
+    system-ui, 'Segoe UI', sans-serif;
+  --scp-font-mono:
+    'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+
+  /* Type scale */
+  --scp-fs-xs:     10px;
+  --scp-fs-sm:     11px;
+  --scp-fs-body:   13px;
+  --scp-fs-md:     14px;
+  --scp-fs-lg:     16px;
+  --scp-fs-h3:     13px;   /* uppercase micro-heading */
+  --scp-fs-h2:     18px;
+  --scp-fs-h1:     28px;
+
+  /* Weights */
+  --scp-fw-regular:  400;
+  --scp-fw-medium:   500;
+  --scp-fw-semibold: 600;
+  --scp-fw-bold:     700;
+
+  /* Line heights */
+  --scp-lh-tight:  1.25;
+  --scp-lh-body:   1.5;
+  --scp-lh-prose:  1.6;
+
+  /* Letter spacing (Sceptre leans on uppercase micro-labels + tight display) */
+  --scp-ls-display:    -0.5px;  /* h1 */
+  --scp-ls-heading:    -0.3px;  /* h2 */
+  --scp-ls-micro:       0.55px;  /* uppercase h3 */
+  --scp-ls-button:      0.04em;  /* uppercase buttons */
+  --scp-ls-tab:         0.06em;  /* uppercase tab labels */
+
+  /* ──── LEGACY ALIASES (keep --r42-* working for existing codebase) ──── */
+  --r42-bg-deep:      var(--scp-bg-deep);
+  --r42-bg-start:     var(--scp-bg-start);
+  --r42-bg-mid:       var(--scp-bg-mid);
+  --r42-bg-end:       var(--scp-bg-end);
+  --r42-orb-cyan:     var(--scp-orb-cyan);
+  --r42-orb-violet:   var(--scp-orb-violet);
+  --r42-orb-warm:     var(--scp-orb-warm);
+  --r42-ink:          var(--scp-ink);
+  --r42-deep:         var(--scp-deep);
+  --r42-panel:        var(--scp-panel);
+  --r42-panel-alt:    var(--scp-panel-alt);
+  --r42-text:         var(--scp-fg);
+  --r42-muted:        var(--scp-fg-muted);
+  --r42-accent:       var(--scp-accent);
+  --r42-accent-dim:   var(--scp-accent-dim);
+  --r42-accent-glow:  var(--scp-accent-glow);
+  --r42-success:      var(--scp-success);
+  --r42-warn:         var(--scp-warn);
+  --r42-error:        var(--scp-error);
+  --r42-shadow:       var(--scp-shadow);
+  --r42-shadow-sm:    var(--scp-shadow-sm);
+  --r42-shadow-glow:  var(--scp-shadow-glow);
+  --r42-inner-light:  var(--scp-inner-light);
+  --r42-edge-highlight: var(--scp-edge-hi);
+  --r42-glass-blur:   var(--scp-glass-blur);
+  --r42-glass-saturate: var(--scp-glass-saturate);
+  --r42-shell-fill:   var(--scp-shell-fill);
+  --r42-shell-blur:   var(--scp-shell-blur);
+  --r42-shell-saturate: var(--scp-shell-saturate);
+  --r42-titlebar-fill: var(--scp-titlebar);
+  --r42-titlebar-blur: var(--scp-titlebar-blur);
+  --r42-radius:       var(--scp-radius);
+  --r42-radius-sm:    var(--scp-radius-sm);
+  --r42-radius-xs:    var(--scp-radius-xs);
+  --r42-radius-pill:  var(--scp-radius-pill);
+  --r42-font:         var(--scp-font-sans);
+  --r42-mono:         var(--scp-font-mono);
+  --r42-ease:         var(--scp-ease);
+  --r42-duration:     var(--scp-duration);
+  --r42-border:       1px solid var(--scp-border);
+  --r42-border-accent: 1px solid var(--scp-border-accent);
+  --r42-border-strong: 1px solid var(--scp-border-strong);
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   SEMANTIC TYPOGRAPHY
+   ══════════════════════════════════════════════════════════════════════ */
+
+.scp-h1, h1.scp {
+  font-family: var(--scp-font-sans);
+  font-size: var(--scp-fs-h1);
+  font-weight: var(--scp-fw-bold);
+  letter-spacing: var(--scp-ls-display);
+  line-height: var(--scp-lh-tight);
+  color: var(--scp-fg);
+}
+
+.scp-h2, h2.scp {
+  font-family: var(--scp-font-sans);
+  font-size: var(--scp-fs-h2);
+  font-weight: var(--scp-fw-bold);
+  letter-spacing: var(--scp-ls-heading);
+  line-height: var(--scp-lh-tight);
+  color: var(--scp-fg);
+}
+
+/* Sceptre's signature "eyebrow" label — small, uppercase, spaced */
+.scp-h3, h3.scp {
+  font-family: var(--scp-font-sans);
+  font-size: var(--scp-fs-h3);
+  font-weight: var(--scp-fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--scp-ls-micro);
+  color: var(--scp-fg);
+}
+
+.scp-body, p.scp {
+  font-family: var(--scp-font-sans);
+  font-size: var(--scp-fs-body);
+  font-weight: var(--scp-fw-regular);
+  line-height: var(--scp-lh-body);
+  color: var(--scp-fg);
+}
+
+.scp-muted    { color: var(--scp-fg-muted); }
+.scp-accent   { color: var(--scp-accent); }
+
+.scp-mono {
+  font-family: var(--scp-font-mono);
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+/* Micro-label pattern used all over Sceptre (form labels, chips, status) */
+.scp-micro {
+  font-family: var(--scp-font-sans);
+  font-size: var(--scp-fs-sm);
+  font-weight: var(--scp-fw-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--scp-ls-button);
+  color: var(--scp-fg-muted);
+}
