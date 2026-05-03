@@ -117,5 +117,6 @@ class Property(TimestampMixin, Base):
     brochure_r2_key: Mapped[str | None] = mapped_column(sa.String(500), nullable=True)
     rera_number: Mapped[str | None] = mapped_column(sa.String(100), nullable=True)
     roi_estimated: Mapped[sa.Numeric | None] = mapped_column(sa.Numeric(5, 2), nullable=True)
+    slug: Mapped[str | None] = mapped_column(sa.String(600), nullable=True, unique=False, index=True)
     embedding_id: Mapped[str | None] = mapped_column(sa.String(255), nullable=True)
     last_synced_at: Mapped[datetime | None] = mapped_column(sa.DateTime(timezone=True), nullable=True)

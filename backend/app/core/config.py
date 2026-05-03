@@ -35,6 +35,33 @@ class Settings(BaseSettings):
     # Vector DB
     QDRANT_URL: str = "http://localhost:6333"
     QDRANT_API_KEY: str = ""
+    QDRANT_COLLECTION_PROPERTIES: str = "properties"
+    QDRANT_COLLECTION_CONVERSATIONS: str = "conversations"
+    QDRANT_COLLECTION_KB: str = "knowledge_base"
+
+    # Embeddings
+    OPENAI_API_KEY: str = ""
+    EMBEDDING_MODEL: str = "text-embedding-3-small"
+    EMBEDDING_DIMS: int = 1536
+
+    # WhatsApp Business API (Meta)
+    WHATSAPP_TOKEN: str = ""
+    WHATSAPP_PHONE_NUMBER_ID: str = ""
+    WHATSAPP_VERIFY_TOKEN: str = "rea-whatsapp-verify"
+
+    # Telegram
+    TELEGRAM_BOT_TOKEN: str = ""
+    TELEGRAM_WEBHOOK_SECRET: str = ""
+
+    # CRM
+    ZOHO_CLIENT_ID: str = ""
+    ZOHO_CLIENT_SECRET: str = ""
+    ZOHO_REFRESH_TOKEN: str = ""
+    HUBSPOT_API_KEY: str = ""
+
+    # Email (SendGrid)
+    SENDGRID_API_KEY: str = ""
+    SENDGRID_FROM_EMAIL: str = "noreply@sceptreestate.com"
 
     # Object Storage (Cloudflare R2)
     R2_ACCOUNT_ID: str = ""
@@ -45,6 +72,9 @@ class Settings(BaseSettings):
 
     # CORS
     CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:3001"]
+
+    # Agent session memory TTL (seconds)
+    SESSION_TTL_SECONDS: int = 86400  # 24 hours
 
 
 @lru_cache

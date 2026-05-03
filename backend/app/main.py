@@ -10,7 +10,9 @@ from app.core.config import settings
 
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
-    # Startup
+    # Startup: ensure Qdrant collections exist
+    from app.services.embedding import ensure_collections
+    await ensure_collections()
     yield
     # Shutdown
 
