@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Users, MessageSquare, Building2, Calendar, BarChart2 } from "lucide-react";
+import { LayoutDashboard, Users, MessageSquare, Building2, Calendar, BarChart2, Bot } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -12,6 +12,10 @@ const navItems = [
   { href: "/admin/properties", label: "Properties", icon: Building2 },
   { href: "/admin/appointments", label: "Appointments", icon: Calendar },
   { href: "/admin/analytics", label: "Analytics", icon: BarChart2 },
+];
+
+const agentItems = [
+  { href: "/admin/chat", label: "AI Chat", icon: Bot },
 ];
 
 export function Sidebar() {
@@ -31,6 +35,25 @@ export function Sidebar() {
             className={cn(
               "flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-colors",
               pathname === href
+                ? "bg-blue-600 text-white"
+                : "text-gray-300 hover:bg-gray-800 hover:text-white"
+            )}
+          >
+            <Icon className="h-4 w-4 shrink-0" />
+            {label}
+          </Link>
+        ))}
+
+        <div className="pt-4 pb-1 px-3">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">AI Agent</p>
+        </div>
+        {agentItems.map(({ href, label, icon: Icon }) => (
+          <Link
+            key={href}
+            href={href}
+            className={cn(
+              "flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-colors",
+              pathname.startsWith(href)
                 ? "bg-blue-600 text-white"
                 : "text-gray-300 hover:bg-gray-800 hover:text-white"
             )}
